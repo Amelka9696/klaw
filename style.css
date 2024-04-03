@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.ctrl,
+.key {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #222;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.ctrl:hover,
+.key:hover {
+    background-color: #9f31bebe;
+}
+
+.ctrl,
+.backspace,
+.tab,
+.capslock,
+.enter,
+.left-shift,
+.right-shift,
+.left-ctrl,
+.left-win,
+.left-alt,
+.right-alt,
+.right-win,
+.right-ctrl,
+.space {
+    width: 90px;
+}
+
+.row.top-row .key {
+    width: 50px;
+}
+
+.row.top-row .backspace,
+.row.top-row .right-shift {
+    width: 110px;
+}
+
+.row.top-row .key:not(:last-child) {
+    margin-right: 2px;
+}
+
+.row:nth-child(2) .key:nth-child(2) {
+    margin-left: 15px;
+}
+
+.row:nth-child(3) .key:nth-child(2) {
+    margin-left: 20px;
+}
+
+.row:nth-child(4) .key:nth-child(2) {
+    margin-left: 40px;
+}
+
+.row:last-child {
+    margin-top: 10px;
+}
