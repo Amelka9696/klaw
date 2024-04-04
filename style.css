@@ -56,6 +56,10 @@ body {
     width: 90px;
 }
 
+.row.top .key{
+    height: 30px;
+    width: 50px;
+}
 .row.top-row .key {
     width: 50px;
 }
