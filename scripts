@@ -1,0 +1,24 @@
+let keysPressed = [];
+
+function keyDown(key) {
+    if (!keysPressed.includes(key)) {
+        keysPressed.push(key);
+    }
+}
+
+function keyUp(key) {
+    const index = keysPressed.indexOf(key);
+    if (index !== -1) {
+        keysPressed.splice(index, 1);
+    }
+}
+
+function showShortcut() {
+    if (keysPressed.includes('ctrl') && keysPressed.includes('x')) {
+        alert("Ctrl + X - wycinanie");
+    }
+    if (keysPressed.includes('alt') && keysPressed.includes('tab')) {
+        alert("Alt + Tab - przełączanie między otwartymi programami");
+    }
+    // Dodaj więcej skrótów klawiszowych tutaj
+}
